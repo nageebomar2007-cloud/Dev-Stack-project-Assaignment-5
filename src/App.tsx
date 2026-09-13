@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
 import HeroSection from "./components/HeroSection";
-// import FooterSection from "./components/FooterSection";
+import FooterSection from "./components/FooterSection";
 // import Cards from "./components/cards/Cards";
 // import { Suspense } from "react";
 import type { Icard } from "./type/cardTypes";
@@ -23,9 +23,9 @@ function App() {
       {/* <ToastContainer />
       <Suspense fallback={<h2>Loading.....</h2>}>
         <Cards cardsPromise={cardsPromise} />
-      </Suspense>
+      </Suspense> */}
 
-      <FooterSection /> */}
+      <FooterSection />
     </>
   );
 }
