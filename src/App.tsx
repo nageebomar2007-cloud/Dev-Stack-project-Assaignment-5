@@ -1,11 +1,11 @@
 import Nav from "./components/Nav";
 import HeroSection from "./components/HeroSection";
 import FooterSection from "./components/FooterSection";
-// import Cards from "./components/cards/Cards";
-// import { Suspense } from "react";
+import Cards from "./components/cards/Cards";
+import { Suspense } from "react";
 import type { Icard } from "./type/cardTypes";
-// import { ToastContainer } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const cardsFetch = async (): Promise<Icard[]> => {
   const res = await fetch("/data.json");
@@ -20,10 +20,10 @@ function App() {
     <>
       <Nav  />
       <HeroSection />
-      {/* <ToastContainer />
+      <ToastContainer />
       <Suspense fallback={<h2>Loading.....</h2>}>
         <Cards cardsPromise={cardsPromise} />
-      </Suspense> */}
+      </Suspense>
 
       <FooterSection />
     </>
