@@ -1,9 +1,9 @@
 import Nav from "./components/Nav";
-// import HeroSection from "./components/HeroSection";
+import HeroSection from "./components/HeroSection";
 // import FooterSection from "./components/FooterSection";
 // import Cards from "./components/cards/Cards";
 // import { Suspense } from "react";
-// import type { Icard } from "./type/cardTypes";
+import type { Icard } from "./type/cardTypes";
 // import { ToastContainer } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 
@@ -19,8 +19,8 @@ function App() {
   return (
     <>
       <Nav  />
-      {/* <HeroSection />
-      <ToastContainer />
+      <HeroSection />
+      {/* <ToastContainer />
       <Suspense fallback={<h2>Loading.....</h2>}>
         <Cards cardsPromise={cardsPromise} />
       </Suspense>
